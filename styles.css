@@ -1,0 +1,85 @@
+:root {
+    font-family: 'Agency FB';
+    /* margin: 0;
+    padding: 0;
+    border: 0; */
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* 
+canvas {
+    width: 100vw;
+    height: 100vh;
+} */
+#container {
+    display: flex;
+    flex-direction: row;
+}
+#controls {
+    height: 100%;
+    width: 40%;
+    background-color: rgb(60, 65, 75);
+    font-size: 16pt;
+    color: burlywood;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: inline-flex;
+    flex-direction: column;
+    border-right: 2px solid darkgray;
+}
+
+#zoomSlider {
+    vertical-align: -6pt;
+}
+#zSlider_current {
+    margin-top: 0;
+    text-align: center;
+}
+#slider {
+    width:70%;
+    padding: 2em;
+}
+#btn-container {
+    width: 30%;
+    padding: 2em;
+    vertical-align: middle;
+    justify-content: right;
+}
+#anim-btn {
+    font-size: larger;
+    width: 80%;
+    height: 100%;
+    
+}
+#slider-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#options-container {
+    display: inline-block;
+}
+
+#draw-options {
+    margin-left: 3em;
+    text-align: left;
+}
+
+#content {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.caption {
+    display: inline-block;
+    width: inherit;
+}

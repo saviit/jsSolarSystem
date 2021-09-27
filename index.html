@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="styles.css" type="text/css" />
+    <script type='text/javascript' src="data/mercury_2100_min2.js"></script>
+    <script type='text/javascript' src="data/venus_2100_min2.js"></script>
+    <script type='text/javascript' src="data/terra_2100_min2.js"></script>
+    <script type='text/javascript' src="data/mars_2100_min2.js"></script>
+    <script type='text/javascript' src="data/jupiter_2100_min2.js"></script>
+    <script type='text/javascript' src="data/saturn_2100_min2.js"></script>
+    <script type='text/javascript' src="data/uranus_2100_min2.js"></script>
+    <script type='text/javascript' src="data/neptune_2100_min2.js"></script>
+    <script type='text/javascript' src="data/dates_2100_min.js"></script>
+    <script type='text/javascript' src="jsNSS.js"></script>
+    <title>Solar System</title>
+</head>
+<body>
+    <div id="container">
+        <div id="controls">
+            <div id="slider-container">
+                <div id="slider">
+                    <label for="zoomSlider">Zoom to orbit</label>
+                    <p>Mercury <input type="range" min="0" max="7" value="6" step="1" id="zoomSlider" name="zoomSlider"> Neptune</p>
+                    <p id="zSlider_current">Current</p>
+                </div>
+                <div id="btn-container">
+                    <button id="anim-btn">Update animation</button>
+                </div>
+            </div>
+            <div id="options-container">
+                <div id="draw-options">
+                    <input type="checkbox" checked="true" id="cboxOptionsDrawLabels" name="cboxOptionsDrawLabels" /><label for="cboxOptionsDrawLabels">Draw labels</label><br/>
+                    <input type="checkbox" checked="true" id="cboxOptionsDrawOrbits" name="cboxOptionsDrawOrbits" /><label for="cboxOptionsDrawLabels">Draw orbits</label>
+                </div>
+            </div>
+            <div id="caption">
+                <footer id="footer">Animation of the Solar System, starting at January 1<sup>st</sup>, 1900 and ending on Dec 31<sup>st</sup>, 2100. Based on data from <a href="https://ssd.jpl.nasa.gov/?horizons">NASA JPL HORIZONS System</a>.</footer>
+            </div>
+        </div>
+        <div id="content">
+            <canvas id="game" height="600" width="600"></canvas>
+        </div>
+    </div>
+</body>
+</html>
